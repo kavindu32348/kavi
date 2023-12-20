@@ -21,7 +21,7 @@
     content: '';
     width: 100%;
     overflow:hidden;
-    min-height: 100vh;
+    height: 100vh;
     backdrop-filter: blur(10px);
     display: flex;
     z-index: 1;
