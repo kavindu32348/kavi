@@ -28,7 +28,7 @@
     background: #0000009c;
     position: absolute;
 }
-.music-player{
+#music-player{
     background: #f3bcc573;
     width: 400px;
     padding: 25px 35px;
@@ -49,6 +49,7 @@ nav .circle{
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    cursor: pointer;
     line-height: 40px;
     background: #fff;
     color: #f53192;
@@ -61,13 +62,13 @@ nav .circle{
     box-shadow: 0 10px 60px rgba(255,26,26,0.26);
     filter: hue-rotate(-40deg);
 }
-.music-player h1{
+#music-player h1{
     font-size: 20px;
     font-weight: 400;
     color: #333;
     margin-top: 20px;
 }
-.music-player p{
+#music-player p{
     font-size: 14px;
     color: #333;
 }
@@ -112,4 +113,16 @@ nav .circle{
     transform: scale(1.5);
     background: #f53192;
     color: #fff;
+}
+#menu.active{
+    display: flex;
+    background: #f3bcc573;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    filter: hue-rotate(35deg);
+    z-index: 2;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 10px 20px #4d01335b;
 }

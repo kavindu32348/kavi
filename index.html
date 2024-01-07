@@ -12,14 +12,14 @@
 </head>
 <body>
     <div class="container">
-        <div class="music-player">
+        <div id="music-player">
 
             <nav>
                 <div class="circle">
                     <i class="fa-solid fa-angle-left"></i>
                 </div>
 
-                <div class="circle">
+                <div class="circle" id="menu1">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
@@ -49,12 +49,16 @@
                 </div>
             </div>
         </div>
+        <div id="menu"></div>
     </div>
 
 
 
 
     <script>
+        let menu1 = document.getElementById("menu1")
+        let menu = document.getElementById("menu")
+        let player = document.getElementById("music-player")
         let progress = document.getElementById("progress");
         let song = document.getElementById("song");
         let ctrlicon = document.getElementById("ctrlicon");
@@ -85,6 +89,9 @@
         progress.onchange = function(){
             song.play();
             song.currentTime = progress.value;
+        }
+        menu1.onclick = function(){
+            menu.classList.toggle("active");
         }
 
 
