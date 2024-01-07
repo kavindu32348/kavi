@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-image: url("media/bg.jpeg");
+    background-image: url("media/Rbg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,7 +33,6 @@
     width: 400px;
     padding: 25px 35px;
     text-align: center;
-    filter: hue-rotate(-25deg);
     z-index: 2;
     border-radius: 20px;
     backdrop-filter: blur(10px);
@@ -51,32 +50,33 @@ nav .circle{
     height: 40px;
     cursor: pointer;
     line-height: 40px;
-    background: #fff;
+    background: #ce96ff;
     color: #f53192;
     box-shadow: 0 5px 10px rgba(255, 26, 26, 0.26);
 }
 .image{
     width: 220px;
     border-radius: 50%;
-    border: 8px solid #fff;
+    border: 8px solid #ba005d;
     box-shadow: 0 10px 60px rgba(255,26,26,0.26);
     filter: hue-rotate(-30deg), brightness(-200%);
 }
 #music-player h1{
     font-size: 20px;
     font-weight: 400;
-    color: #333;
+    color: #ce96ff;
     margin-top: 20px;
 }
 #music-player p{
     font-size: 14px;
-    color: #333;
+    color: #aaa;
 }
 #progress{
     -webkit-appearance: none;
     width: 100%;
     height: 6px;
-    background: #f53192;
+    background: linear-gradient(90deg,#ba005d,#ff389c);
+    filter: brightness(1.1);
     border-radius: 4px;
     cursor: pointer;
     margin: 40px 0;
@@ -84,7 +84,7 @@ nav .circle{
 }
 #progress::-webkit-slider-thumb{
     -webkit-appearance: none;
-    background: #f53192;
+    background: #ba005d;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -95,24 +95,27 @@ nav .circle{
     display: flex;
     justify-content: center;
     align-items: center;
+    filter : hue-rotate(15deg);
 }
 .controls div{
     width: 60px;
     height: 60px;
     margin: 20px;
-    background: #fff;
+    background: #bc70ff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #f53192;
+    color: #ba005d;
+    filter: brightness(1.1);
     box-shadow: 0 10px 20px rgba(255,26,26,0.26);
     cursor: pointer;
 }
 .controls div:nth-child(2){
     transform: scale(1.5);
-    background: #f53192;
+    background: #ba005d;
     color: #fff;
+    filter: brightness(1.1);
 }
 #menu.active{
     display: flex;
